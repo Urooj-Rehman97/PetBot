@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PETBot</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+  <link rel="shortcut icon" href="assessts/images/PETBot logo.png">
+  <link rel="stylesheet" href="CSS/aboutUs.css">
+
+    <script src="JS/bootstrap.bundle.js"></script>
+    <script src="JS/jquery-3.7.1.js"></script>
+    <style>
+        .mydiv-2 {
+          width: 100%;
+          height: auto;
+          /* border: 2px solid red; */
+          background-color: rgba(0, 0, 0, 0.882);
+          margin-top: 30px;
+        }
+    
+        .footer {
+          height: auto;
+          padding: 30px;
+        }
+    
+        .head, .links, .f-icons{
+          /* border: 2px solid red; */
+          padding-top: 30px;
+        }
+    
+        .links h4, .f-icons h4 {
+          font-size: 28px;
+          color: darkgoldenrod;
+        }
+    
+        .links ul li {
+          list-style: none;
+          line-height: 30px;
+          font-size: 18px;
+        }
+    
+        .links ul li a {
+          text-decoration: none;
+          color:white;
+          transition: all .5s;
+        }
+    
+        .links ul li a:hover {
+          color: darkgoldenrod;
+        }
+    
+        .head a {
+          text-decoration: none;
+          color:darkgoldenrod;
+          font-weight: bold;
+          font-size: 32px;
+        }
+        .head p {
+          color: whitesmoke;
+          font-size: 17px;
+        }
+    
+        .links h4 {
+          padding-left: 30px;
+        }
+    
+        .f-icons input[type="email"] {
+          width: 260px;
+          height: 40px;
+          background-color: white;
+          border: none;
+          text-indent: 10px;
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+        .subs1{
+    width: 180px;
+      height: 40px;
+      background-color:darkgoldenrod;
+      border: none;
+      border-radius: 50px;
+      color: white;
+      font-size: 14px;
+      margin-left: 10px;
+      margin-bottom: 10px;
+    }
+    
+        .f-icons ul li {
+          list-style: none;
+          display: inline;
+          padding-right: 20px;
+          font-size: 24px;
+          padding-top: 30px;
+        }
+    
+        .f-icons ul li a {
+          color: grey;
+          font-weight: lighter;
+          transition: all .5s;
+        }
+    
+        .f-icons ul li a:hover {
+          color:darkgoldenrod;
+        }
+    
+        @media screen and (max-width:768px) {
+          .f-icons input[type="email"] {
+            width: 160px;
+            font-size: 14px;
+            height: 30px;
+          }
+    
+          .f-icons ul li {
+            font-size: 18px;
+            padding-right: 10px;
+          }
+    
+          .links ul li {
+            font-size: 14px;
+            line-height: 26px;
+          }
+          .links h4, .f-icons h4 {
+            font-size: 20px;
+          }
+        }
+    
+        @media screen and (max-width:576px) {
+          .col-4 {
+            width: 100%;
+          }
+    
+          .mydiv-2 {
+            height: auto;
+          }
+        }
+      </style>
+</head>
+
+<body>
+    <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg navbar-light position-fixed" style="z-index:1;">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-3" href="index.html"><img src="images/PETBot logo.png" alt="logo" width="40px" height="36px"
+          style="margin-top: -10px; margin-left: 20px;"><span
+          style="color: black; font-family: cursive; font-weight:bold; font-style: italic; font-size: 28px;">PET</span><span
+          style="color: darkgoldenrod; font-family:cursive; font-weight: bold; font-style: italic; font-size: 28px;">Bot</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Categories
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <ul>
+                <li><a class="dropdown-item" href="categories.html">BOTTLES</a></li>
+                <li><a class="dropdown-item" href="categories.html">Water Bottles</a></li>
+                <li><a class="dropdown-item" href="juice.html">Juice Bottles</a></li>
+                <li><a class="dropdown-item" href="Hair-care.html">Hair Care Bottles</a></li>
+                <li><a class="dropdown-item" href="Pharma.html">Pharmacuetical Bottles</a></li>
+                <li><a class="dropdown-item" href="spray.html">Spray Bottles</a></li>
+                <li><a class="dropdown-item" href="Edible.html">Edible Oil Bottles</a></li>
+                <li><a class="dropdown-item" href="House.html">Household Chemical
+                    Bottles</a></li>
+              </ul>
+              <ul>
+                <li><a class="dropdown-item" href>JARS</a></li>
+                <li><a class="dropdown-item" href="spice.html">Spice Jars</a></li>
+                <li><a class="dropdown-item" href="candle.html">Candles Jar</a></li>
+                <li><a class="dropdown-item" href="makeup.html">Makeup Jars</a></li>
+                <li><a class="dropdown-item" href="cookies.html">Cookies Jars</a></li>
+                <li><a class="dropdown-item" href="sauce.html">Sauce Jars</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="aboutUs.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="query.html">Queries</a>
+          </li>
+          <div class="nav-icons">
+            <ul>
+              <li class="nav-item1">
+                <a class="nav-link" href="log-in.html"><span><i class="fa-solid fa-user"></i></span>
+                  Login</a>
+              </li>
+            </ul>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <!-- Banner Start -->
+    <div class="main">
+        <div class="container-fluid banner d-flex justify-content-center align-items-center">
+            <div class="row banner-des ">
+                <h1>About PETBot</h1>
+                <p>Custom plastic bottle manufacturing</p>
+            </div>
+        </div>
+    </div>
+    <!-- Page Content -->
+    <div class="container page">
+        <div class="row page-des">
+            <h2>Partner with our bottle experts</h2>
+            <h3>You can expect our global team to go above and beyond, creating value for your brand at every
+                touchpoint.</h3>
+            <p></p>
+            <p>Are you ready to rethink everything you believe a plastic container can be? Our team does it every day,
+                together with designers, customers and manufacturing partners. It’s a chain of collaboration that
+                produces plastic packaging that elevates form and function — affordably and sustainably. When you have a
+                vision of the perfect bottle, partner with us to shape your brand’s future.</p>
+        </div>
+    </div>
+    <!-- Block Content -->
+    <div class="container block1">
+        <div class="row d-flex align-items-center justify-content-between">
+            <div class="col-6 block-content1">
+                <h2>Shaping the Future for More Than 50 Years</h2><br>
+                <p>It all started in 1970 with a simple motor oil container. Today, we’re a global company whose
+                    stability, innovation and customizable services attract Fortune 500 firms and small independent
+                    businesses alike. Whether you want to create new, sustainable packaging options or find drop-in
+                    catalog bottles, we’ll help you find the right solution.</p>
+            </div>
+            <div class="col-6 block-img1"></div>
+        </div>
+    </div>
+    <div class="container block2">
+        <div class="row d-flex align-items-center justify-content-between">
+            <div class="col-6 block-img2"></div>
+            <div class="col-6 block-content2">
+                <h2>Value Beyond Price and Performance</h2><br>
+                <p>Our technologies are intricate. But our approach to serving you is simple: we’re obsessed with your
+                    success. Our business is built on timeless principles like talking straight, getting stuff done and
+                    hiring the best people, and these principles inform the rest of our operations. Our range of
+                    carefully monitored processes and technologies helps us deliver the innovation, speed-to-market and
+                    supply chain satisfaction you expect from an industry leader.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Content -->
+    <div class="container content">
+        <div class="row cont-des">
+            <h2>Why Choose PETBot?</h2>
+            <p>PET (Polyethylene Terephthalate) bottles are one of the most sustainable packaging options available
+                today.
+                Known for their lightweight, durability, and recyclability, PET bottles are a preferred choice across
+                industries—from food and beverage to personal care.</p>
+        </div>
+        <div class="row d-flex justify-content-around">
+            <div class="col-4 sub-cont">
+                <div class="cont-icon">
+                    <i class="fa-solid fa-recycle"></i>
+                </div>
+                <div class="cont">
+                    <h3>Eco-Friendly</h3>
+                    <p>PET is 100% recyclable, making it a leading choice for sustainable packaging solutions.</p>
+                </div>
+            </div>
+            <div class="col-4 sub-cont">
+                <div class="cont-icon">
+                    <i class="fa-solid fa-seedling"></i>
+                </div>
+                <div class="cont">
+                    <h3>Sustainability Commitment</h3>
+                    <p> Our commitment to sustainability extends from sourcing materials to offering recyclable
+                        products, helping
+                        your business reduce its environmental footprint.</p>
+                </div>
+            </div>
+            <div class="col-4 sub-cont">
+                <div class="cont-icon">
+                    <i class="fa-solid fa-shield-heart"></i>
+                </div>
+                <div class="cont">
+                    <h3>Safe & Non-Toxic</h3>
+                    <p>PET is BPA-free and safe for packaging food, beverages, and cosmetics.</p>
+                </div>
+            </div>
+            <div class="col-4 sub-cont">
+                <div class="cont-icon">
+                    <i class="fa-solid fa-award"></i>
+                </div>
+                <div class="cont">
+                    <h3>Hight Quality Standard</h3>
+                    <p>Our bottles are manufactured using advanced technology and strict quality control to ensure
+                        consistency,
+                        reliability, and safety.</p>
+                </div>
+            </div>
+            <div class="col-4 sub-cont">
+                <div class="cont-icon">
+                    <i class="fa-solid fa-feather"></i>
+                </div>
+                <div class="cont">
+                    <h3>Lightweight & Durable</h3>
+                    <p> PET bottles are strong, yet light, reducing transportation costs and carbon footprint.We offer a
+                        wide
+                        selection to meet your packaging needs.</p>
+                </div>
+            </div>
+            <div class="col-4 sub-cont">
+                <div class="cont-icon">
+                    <i class="fa-solid fa-truck-fast"></i>
+                </div>
+                <div class="cont">
+                    <h3>Fast & Flexible Service</h3>
+                    <p>With efficient production and reliable delivery schedules, we’re here to ensure your packaging
+                        needs are
+                        met on time. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Start -->
+    <div class="mydiv-2">
+      <div class="container footer">
+        <div class="row">
+          <div class="col-4 head">
+            <h3><a href="index.html">PETBot</a></h3>
+            <p>Pet Bot is a company focused on transforming plastic bottles into innovative, sustainable products. They
+              specialize in recycling and repurposing PET plastic to reduce environmental impact and promote eco-friendly
+              solutions.</p>
+          </div>
+          <div class="col-4 links">
+            <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="log-in.html">Log in</a></li>
+            <li><a href="sign-up.html">Sign up</a></li>
+          </ul>
+          </div>
+          <div class="col-4 f-icons d-flex align-items-center" style="flex-direction: column;">
+            <h4>SUBSCRIBE TODAY!</h4>
+            <a href="sign-up.html"><button type="submit" class="btn btn-subs subs1">
+              SIGN UP</button></a>
+            <ul>
+              <li><a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa-regular fa-envelope"></i></a></li>
+              <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
+              <li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest-p"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PETBot</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="CSS/bootstrap.css" />
+    <link rel="stylesheet" href="CSS/categories.css" />
+  <link rel="shortcut icon" href="assessts/images/PETBot logo.png">
+  <!-- <link rel="stylesheet" href="CSS/footer.css"> -->
+
+    <script src="JS/bootstrap.bundle.js"></script>
+    <script src="JS/jquery-3.7.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+      .mydiv-2 {
+        width: 100%;
+        height: auto;
+        /* border: 2px solid red; */
+        background-color: rgba(0, 0, 0, 0.882);
+        margin-top: 30px;
+      }
+  
+      .footer {
+        height: auto;
+        padding: 30px;
+      }
+  
+      .head, .links, .f-icons{
+        /* border: 2px solid red; */
+        padding-top: 30px;
+      }
+  
+      .links h4, .f-icons h4 {
+        font-size: 28px;
+        color: darkgoldenrod;
+      }
+  
+      .links ul li {
+        list-style: none;
+        line-height: 30px;
+        font-size: 18px;
+      }
+  
+      .links ul li a {
+        text-decoration: none;
+        color:white;
+        transition: all .5s;
+      }
+  
+      .links ul li a:hover {
+        color: darkgoldenrod;
+      }
+  
+      .head a {
+        text-decoration: none;
+        color:darkgoldenrod;
+        font-weight: bold;
+        font-size: 32px;
+      }
+      .head p {
+        color: whitesmoke;
+        font-size: 17px;
+      }
+  
+      .links h4 {
+        padding-left: 30px;
+      }
+  
+      .f-icons input[type="email"] {
+        width: 260px;
+        height: 40px;
+        background-color: white;
+        border: none;
+        text-indent: 10px;
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+      .subs1{
+  width: 180px;
+    height: 40px;
+    background-color:darkgoldenrod;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  
+      .f-icons ul li {
+        list-style: none;
+        display: inline;
+        padding-right: 20px;
+        font-size: 24px;
+        padding-top: 30px;
+      }
+  
+      .f-icons ul li a {
+        color: grey;
+        font-weight: lighter;
+        transition: all .5s;
+      }
+  
+      .f-icons ul li a:hover {
+        color:darkgoldenrod;
+      }
+  
+      @media screen and (max-width:768px) {
+        .f-icons input[type="email"] {
+          width: 160px;
+          font-size: 14px;
+          height: 30px;
+        }
+  
+        .f-icons ul li {
+          font-size: 18px;
+          padding-right: 10px;
+        }
+  
+        .links ul li {
+          font-size: 14px;
+          line-height: 26px;
+        }
+        .links h4, .f-icons h4 {
+          font-size: 20px;
+        }
+      }
+  
+      @media screen and (max-width:576px) {
+        .col-4 {
+          width: 100%;
+        }
+  
+        .mydiv-2 {
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg navbar-light position-fixed" style="z-index:1;">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-3" href="index.html"><img src="images/PETBot logo.png" alt="logo" width="40px" height="36px"
+          style="margin-top: -10px; margin-left: 20px;"><span
+          style="color: black; font-family: cursive; font-weight:bold; font-style: italic; font-size: 28px;">PET</span><span
+          style="color: darkgoldenrod; font-family:cursive; font-weight: bold; font-style: italic; font-size: 28px;">Bot</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" href="categories.html" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Categories
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <ul>
+                <li><a class="dropdown-item" href="categories.html">BOTTLES</a></li>
+                <li><a class="dropdown-item" href="categories.html">Water Bottles</a></li>
+                <li><a class="dropdown-item active" href="juice.html">Juice Bottles</a></li>
+                <li><a class="dropdown-item" href="Hair-care.html">Hair Care Bottles</a></li>
+                <li><a class="dropdown-item" href="Pharma.html">Pharmacuetical Bottles</a></li>
+                <li><a class="dropdown-item" href="spray.html">Spray Bottles</a></li>
+                <li><a class="dropdown-item" href="Edible.html">Edible Oil Bottles</a></li>
+                <li><a class="dropdown-item" href="House.html">Household Chemical
+                    Bottles</a></li>
+              </ul>
+              <ul>
+                <li><a class="dropdown-item" href>JARS</a></li>
+                <li><a class="dropdown-item" href="spice.html">Spice Jars</a></li>
+                <li><a class="dropdown-item" href="candle.html">Candles Jar</a></li>
+                <li><a class="dropdown-item" href="makeup.html">Makeup Jars</a></li>
+                <li><a class="dropdown-item" href="cookies.html">Cookies Jars</a></li>
+                <li><a class="dropdown-item" href="sauce.html">Sauce Jars</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutUs.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="query.html">Queries</a>
+          </li>
+          <div class="nav-icons">
+            <ul>
+              <li class="nav-item1">
+                <a class="nav-link" href="log-in.html"><span><i class="fa-solid fa-user"></i></span>
+                  Login</a>
+              </li>
+            </ul>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!-- side-categories -->
+      <div class="side-div">
+        <div class="category-list list-group">
+          <ul>
+            <li><h5>WATER bOTTLES</h5></li>
+              <li><a   class="list-group-item list-group-item-action" href="categories.html">Water Bottles</a></li>
+                <li><a class="list-group-item list-group-item-action" href="juice.html">Juice Bottles</a></li>
+                <li><a class="list-group-item list-group-item-action" href="Hair-care.html">Hair care Bottles</a></li>
+                <li><a class="list-group-item list-group-item-action" href="Pharma.html">Pharmacuetical Bottles</a></li>
+                <li><a class="list-group-item list-group-item-action" href="spray.html">Spray Bottles</a></li>
+                <li><a class="list-group-item list-group-item-action" href="Edible.html">Edible Oil Bottles</a></li>
+                <li><a class="list-group-item list-group-item-action" href="House.html">Household Chemical Bottles</a></li>
+                <li><h5>JARS</h5></li>
+                <li><a class="list-group-item list-group-item-action" href="spice.html">Spice Jars</a></li>
+                <li><a class="list-group-item list-group-item-action" href="candle.html">Candles Jars</a></li>
+                <li><a class="list-group-item list-group-item-action" href="makeup.html">Makeup Jars</a></li>
+                <li><a class="list-group-item list-group-item-action" href="cookies.html">Cookies Jars</a></li>
+                <li><a class="list-group-item list-group-item-action" href="sauce.html">Sauce Jars</a></li>
+          </ul>
+      </div>
+      <div class="toggle-menu">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+         
+      </div>
+  </div> 
+
+      <div class="container m-5 w-100 h-100 detail" >
+
+        <h2>Juice Bottles</h2>
+        <!-- <p>
+          Water bottles are convenient, eco-friendly solutions for staying hydrated on the go.
+        </p> -->
+
+        <div class="contaniner card-box mx-auto">
+          <div class="row">
+            
+            <div class="col col-lg-4 col-d-4 col-sm-12">
+              <div class="card h-50">
+                <img
+                  src="images/juice bottles U shapes.jpg "
+                  class="card-img-top"
+                  alt="..." height="400px" width="200px"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">JUICE BOTTLES</h5>
+                  <p class="card-text">
+                    U-Shaped juice bottleS
+                  </p>
+                  <!-- <button type="button" class="btn btn-dark" style="border-radius: 20px;"> Quick view</button-->
+                     <!-- Button trigger modal -->
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="border-radius: 20px;">
+                  Quick View
+                </button><a class="icon-link"
+                 href="word files e p0roject-20241123T164956Z-001/word files e p0roject/Water Bottles.docx" download=""><i class="fa-solid fa-circle-arrow-down"></i></a>  
+                
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col col-lg-4 col-d-4 col-sm-12">
+              <div class="card h-50">
+                <img
+                  src="images/juice bottle cylindrical.jpg"
+                  class="card-img-top"
+                  alt="..." height="400px" width="200px"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">JUICE BOTTLES</h5>
+                  <p class="card-text">
+                     Juice bottles set of 3 
+                  </p>
+                  <!-- <button type="button" class="btn btn-dark" style="border-radius: 20px;">Qiick view</button> --> <!-- Button trigger modal -->
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop2" style="border-radius: 20px;">
+                  Quick View
+                </button>
+                <a class="icon-link "href="word files e p0roject-20241123T164956Z-001/word files e p0roject/juice Bottles.docx" download=""><i class="fa-solid fa-circle-arrow-down"></i></a>
+
+                </div>
+              </div>
+            </div>
+            <div class="col col-lg-4 col-d-4 col-sm-12">
+              <div class="card h-50">
+                <img
+                  src="images/juice bottle in baby pink.jpg"
+                  class="card-img-top"
+                  alt="..." height="400px" width="200px"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">JUICE BOTTLES</h5>
+                  <p class="card-text">
+                    Juice bottle in baby pink color 
+                  </p>
+                  <!-- <button type="button" class="btn btn-dark" style="border-radius: 20px;">Quick view</button> --> <!-- Button trigger modal -->
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop3" style="border-radius: 20px;">
+                  Quick View
+                </button>
+                <a class="icon-link" href="word files e p0roject-20241123T164956Z-001/word files e p0roject/juice Bottles.docx" download=""><i class="fa-solid fa-circle-arrow-down"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contaniner card-box">
+          <div class="row">
+             <div class="col col-lg-4 col-d-4 col-sm-12">
+            <div class="card h-50">
+              <img
+                src="images/juice bottle kitten design.jpg"
+                class="card-img-top"
+                alt="..." height="400px" width="200px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">JUICE BOTTLES</h5>
+                <p class="card-text">
+                  Hello kitty style juice bottle
+                </p>
+                <!-- <button type="button" class="btn btn-dark" style="border-radius: 20px;">Quick view</button> --> <!-- Button trigger modal -->
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop4" style="border-radius: 20px;">
+                  Quick View
+                </button>
+                <a class="icon-link" href="word files e p0roject-20241123T164956Z-001/word files e p0roject/juice Bottles.docx" download=""><i class="fa-solid fa-circle-arrow-down"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-lg-4 col-d-4 col-sm-12">
+            <div class="card h-50">
+              <img
+                src="images/juice bottle lavender cup.jpg"
+                class="card-img-top"
+                alt="..." height="400px" width="200px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">JUICE BOTTLES</h5>
+                <p class="card-text">
+                Lavender color juice cup
+                </p>
+                <!-- <button type="button" class="btn btn-dark" style="border-radius: 20px;">Quick view</button> --> <!-- Button trigger modal -->
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop5" style="border-radius: 20px;">
+                  Quick View
+                </button>
+                <a class="icon-link" href="word files e p0roject-20241123T164956Z-001/word files e p0roject/juice Bottles.docx" download=""><i class="fa-solid fa-circle-arrow-down"></i></a>
+
+              </div>
+            </div>
+          </div>
+          <div class="col col-lg-4 col-d-4 col-sm-12">
+            <div class="card h-50">
+              <img
+                src="images/juice bottles 3 pieces fancy.jpg"
+                class="card-img-top"
+                alt="..." height="400px" width="200px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">JUICE BOTTLE</h5>
+                <p class="card-text">
+                  Elegant juice cups(set of 3)
+                </p>
+                <!-- <button type="button" class="btn btn-dark" style="border-radius: 20px;">Quick view</button> --> <!-- Button trigger modal -->
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop6" style="border-radius: 20px;">
+                  Quick View
+                </button>
+                <a class="icon-link" href="word files e p0roject-20241123T164956Z-001/word files e p0roject/juice Bottles.docx" download=""><i class="fa-solid fa-circle-arrow-down"></i></a>
+
+
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="contaniner card-box">
+          <div class="row"> 
+             <div class="col col-lg-4 col-d-4 col-sm-12">
+            <div class="card h-50">
+              <img
+                src="images/juice bottles Aesthetic pack of 3.jpg"
+                class="card-img-top"
+                alt="..." height="400px" width="200px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">JUICE BOTTLES</h5>
+                <p class="card-text">
+                 Matte juice bottles(set of 3)
+                </p>
+                <!-- <button type="button" class="btn btn-dark" style="border-radius: 20px;">Quick view</button> --> <!-- Button trigger modal -->
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop7" style="border-radius: 20px;">
+                  Quick View
+                </button>
+                <a class="icon-link" href="word files e p0roject-20241123T164956Z-001/word files e p0roject/juice Bottles.docx" download=""><i class="fa-solid fa-circle-arrow-down"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-lg-4 col-d-4 col-sm-12">
+            <div class="card h-50">
+              <img
+                src="images/juice bottles micky styles cups 2.jpg"
+                class="card-img-top"
+                alt="..." height="400px" width="200px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">JUICE BOTTLES</h5>
+                <p class="card-text">
+                  Micky style juice cups
+                </p>
+                <!-- <button type="button" class="btn btn-dark" style="border-radius: 20px;">Quick view</button>  -->
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop8" style="border-radius: 20px;">
+                  Quick View
+                </button>
+                <a class="icon-link" href="word files e p0roject-20241123T164956Z-001/word files e p0roject/juice Bottles.docx" download=""><i class="fa-solid fa-circle-arrow-down"></i></a>
+
+
+              </div>
+            </div>
+          </div>
+          <div class="col col-lg-4 col-d-4 col-sm-12">
+            <div class="card h-50">
+              <img
+                src="images/juice bottles mini.jpg"
+                class="card-img-top"
+                alt="..." height="400px" width="200px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">JUICE BOTTLES</h5>
+                <p class="card-text">
+                 MINI Juice bottles
+                </p>
+               
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop9" style="border-radius: 20px;">
+                  Quick View
+                </button>
+
+                <a class="icon-link" href="word files e p0roject-20241123T164956Z-001/word files e p0roject/juice Bottles.docx" download=""><i class="fa-solid fa-circle-arrow-down"></i></a>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content" style="transform: scaleX(1.4);width: 2000px;">
+        
+          <div class="modal-header pb-2">
+            <h1 class="font-weight-light ml-4" style="padding-left: 16px;">U-Shaped juice bottleS
+            </h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body"> 
+            <div class="row mt-2 p-3">
+              <div class="col-md-6">
+                <img src="images/juice bottles U shapes.jpg" alt="" style="width: 85%;
+                height: 600px;">
+              </div>
+              <div class="col-md-6 pr-5">
+                <h2 class="product-name"></h2>
+                <p style="box-sizing: border-box;" class="product_desc">
+                  <h3 style="font-size: 70px; font-family:Verdana, Geneva, Tahoma, sans-serif;padding-right: 10px;">Juice Bottels</h3>
+                </p>
+                <p style="font-size: 22px;">Refresh your day with every pour the uniquely designed U-shaped bottle for perfect, on-the-go hydration</p>
+                <p style="font-size: 18px;">Availability: In Stock</p>
+                <p style="font-size: 18px;">Availability: In Stock</p>
+                <p style="font-size: 18px;">Availability: In Stock</p>
+                <p>
+                 <span style="text-decoration: line-through; color: gray; font-size: 19px;"> RS.255.00 PKR</span>
+                </p>
+                <p>
+                  <span style="font-weight: bold; font-size: 19px;">RS.190.00 PKR</span>
+                </p>
+
+                                <p style="font-size: 19px;">Review : &nbsp;&nbsp;&nbsp;
+                                   <i class="fa fa-star text-"      style="color: goldenrod;" ></i>
+                                   <i class="fa fa-star text- ml-2" style="color: goldenrod;"></i>
+                                   <i class="fa fa-star text- ml-2" style="color: goldenrod;"></i>
+                                   <i class="fa fa-star text- ml-2" style="color: goldenrod;"></i>
+                                   <i class="fa fa-star ml-2" style="color: gray;"></i>
+                                </p>
+                                <h4 class="product_price"></h4>
+                                
+                                <button id="allert" class="btn mt-2" style="width:150px; background-color: darkgoldenrod; color: white; font-size: 20px;" >Add to Card</button>
+                                <button id="add" class="btn mt-2" style="width:150px; background-color: white; color: darkgoldenrod; font-size: 20px; border: 2px solid goldenrod; font-weight: bold;" >Wishlist</button>
+              </div>
+            </div>
+          </div> 
+          </div>
+          
+        </div>
+      </div>  
+      <!-- 2Modal -->
+      <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+          <div class="modal-content" style="transform: scaleX(1.4);width: 2000px;">
+          
+            <div class="modal-header pb-2">
+              <h1 class="font-weight-light ml-4" style="padding-left: 16px;">Juice bottles set of 3
+              </h1>
+              <!-- <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5> -->
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body"> 
+              <div class="row mt-2 p-3">
+                <div class="col-md-6">
+                  <img src="images/juice bottle cylindrical.jpg" alt="" style="width: 85%;
+                  height: 600px;">
+                </div>
+                <div class="col-md-6 pr-5">
+                  <h2 class="product-name"></h2>
+                  <p style="box-sizing: border-box;" class="product_desc">
+                    <h3 style="font-size: 70px; font-family:Verdana, Geneva, Tahoma, sans-serif;padding-right: 10px;">Juice Bottles </h3>
+                  </p>
+                  <p style="font-size: 22px;">"Elevate your hydration game with this set of 3 premium PET juice bottles sleek, durable, and perfect for on-the-go freshness!"</p>
+                  <p style="font-size: 18px;">Availability: In Stock</p>
+                  <p style="font-size: 18px;">Availability: In Stock</p>
+                  <p style="font-size: 18px;">Availability: In Stock</p>
+                  <p>
+                   <span style="text-decoration: line-through; color: gray; font-size: 19px;"> RS.450.00 PKR</span>
+                  </p>
+                  <p>
+                    <span style="font-weight: bold; font-size: 19px;">RS.330.00 PKR</span>
+                  </p>
+  
+                                  <p style="font-size: 19px;">Review : &nbsp;&nbsp;&nbsp;
+                                     <i class="fa fa-star text-"      style="color: goldenrod;" ></i>
+                                     <i class="fa fa-star text- ml-2" style="color: goldenrod;"></i>
+                                     <i class="fa fa-star text- ml-2" style="color: goldenrod;"></i>
+                                     <i class="fa fa-star text- ml-2" style="color: grey;"></i>
+                                     <i class="fa fa-star ml-2" style="color: gray;"></i>
+                                  </p>
+                                  <h4 class="product_price"></h4>
+                                  
+                                  <button id="allert1" class="btn mt-2" style="width:150px; background-color: darkgoldenrod; color: white; font-size: 20px;" >Add to Card</button>
+                                  <button id="add1" class="btn mt-2" style="width:150px; background-color: white; color: darkgoldenrod; font-size: 20px; border: 2px solid goldenrod; font-weight: bold;" >Wishlist</button>
+                </div>
+              </div>
+            </div> 
+            </div>
+            
+          </div>
+        </div>
+      <!-- 3Modal -->
+      <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+          <div class="modal-content" style="transform: scaleX(1.4);width: 2000px;">
+          
+            <div class="modal-header pb-2">
+              <h1 class="font-weight-light ml-4" style="padding-left: 16px;">Juice bottle in baby pink color
+              </h1>
+              <!-- <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5> -->
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body"> 
+              <div class="row mt-2 p-3">
+                <div class="col-md-6">
+                  <img src="images/juice bottle in baby pink.jpg" alt="" style="width: 85%;
+                  height: 600px;">
+                </div>
+                <div class="col-md-6 pr-5">
+                  <h2 class="product-name"></h2>
+                  <p style="box-sizing: border-box;" class="product_desc">
+                    <h3 style="font-size: 70px; font-family:Verdana, Geneva, Tahoma, sans-serif;padding-right: 10px;">Juice Bottles </h3>
+                  </p>
+                  <p style="font-size: 22px;">Add a touch of charm to your day with this baby pink juice bottle  stylish, vibrant, and perfect for every sip</p>
+                  <p style="font-size: 18px;">Availability: In Stock</p>
+                  <p style="font-size: 18px;">Availability: In Stock</p>
+                  <p style="font-size: 18px;">Availability: In Stock</p>
+                  <p>
+                   <span style="text-decoration: line-through; color: gray; font-size: 19px;"> RS.255.00 PKR</span>
+                  </p>
+                  <p>
+                    <span style="font-weight: bold; font-size: 19px;">RS.195.00 PKR</span>
+                  </p>
+  
+                                  <p style="font-size: 19px;">Review : &nbsp;&nbsp;&nbsp;
+                                     <i class="fa fa-star text-"      style="color: goldenrod;" ></i>
+                                     <i class="fa fa-star text- ml-2" style="color: goldenrod;"></i>
+                                     <i class="fa fa-star text- ml-2" style="color: goldenrod;"></i>
+                                     <i class="fa fa-star text- ml-2" style="color: goldenrod;"></i>
+                                     <i class="fa fa-star ml-2" style="color: gray;"></i>
+                                  </p>
+                                  <h4 class="product_price"></h4>
+                                  
+                                  <button id="allert2" class="btn mt-2" style="width:150px; background-color: darkgoldenrod; color: white; font-size: 20px;" >Add to Card</button>
+                                  <button id="add2" class="btn mt-2" style="width:150px; background-color: white; color: darkgoldenrod; font-size: 20px; border: 2px solid goldenrod; font-weight: bold;" >Wishlist</button>
+                </div>
+              </div>
+            </div> 
+            </div>
+            
+          </div>
+        </div>
+        <!--4 Modal -->
+        <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content" style="transform: scaleX(1.4);width: 2000px;">
+            
+              <div class="modal-header pb-2">
+                <h1 class="font-weight-light ml-4" style="padding-left: 16px;">Hello kitty style juice bottle
+                </h1>
+                <!-- <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5> -->
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body"> 
+                <div class="row mt-2 p-3">
+                  <div class="col-md-6">
+                    <img src="images/juice bottle kitten design.jpg" alt="" style="width: 85%;
+                    height: 600px;">
+                  </div>
+                  <div class="col-md-6 pr-5">
+                    <h2 class="product-name"></h2>
+                    <p style="box-sizing: border-box;" class="product_desc">
+                      <h3 style="font-size: 70px; font-family:Verdana, Geneva, Tahoma, sans-serif;padding-right: 10px;">Juice Bottles </h3>
+                    </p>
+                    <p style="font-size: 22px;">Bring fun and flair to your drinks with this adorable Hello Kitty-style juice bottle a perfect mix of cute and practical</p>
+                    <p style="font-size: 18px;">Availability: In Stock</p>
+                    <p style="font-size: 18px;">Availability: In Stock</p>
+                    <p style="font-size: 18px;">Availability: In Stock</p>
+                    <p>
+                     <span style="text-decoration: line-through; color: gray; font-size: 19px;"> RS.425.00 PKR</span>
+                    </p>
+                    <p>
+                      <span style="font-weight: bold; font-size: 19px;">RS.300.00 PKR</span>
+                    </p>
+    
+                                    <p style="font-size: 19px;">Review : &nbsp;&nbsp;&nbsp;
+                                       <i class="fa fa-star text-"      style="color: goldenrod;" ></i>
+                                       <i class="fa fa-star text- ml-2" style="color: goldenrod;"></i>
+                                       <i class="fa fa-star text- ml-2" style="color: goldenrod;"></i>
+                                       <i class="fa fa-star text- ml-2" style="color: goldenrod;"></i>
+                                       <i class="fa fa-star ml-2" style="color: gray;"></i>
+                                    </p>
+                                    <h4 class="product_price"></h4>
+                                    
+                                    <button id="allert3" class="btn mt-2" style="width:150px; background-color: darkgoldenrod; color: white; font-size: 20px;" >Add to Card</button>
+                                    <button id="add3" class="btn mt-2" style="width:150px; background-color: white; color: darkgoldenrod; font-size: 20px; border: 2px solid goldenrod; font-weight: bold;" >Wishlist</button>
+                  </div>
+                </div>
+              </div> 
+              </div>
+              
+            </div>
+          </div>
+          <!-- 5Modal -->
+          <div class="modal fade" id="staticBackdrop5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+              <div class="modal-content" style="transform: scaleX(1.4);width: 2000px;">
+              
+                <div class="modal-header pb-2">
+                  <h1 class="font-weight-light ml-4" style="padding-left: 16px;">Lavender color juice cup
+                  </h1>
+                  <!-- <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5> -->
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body"> 
+                  <div class="row mt-2 p-3">
+                    <div class="col-md-6">
+                      <img src="images/juice bottle lavender cup.jpg" alt="" style="width: 85%;
+                      height: 600px;">
+                    </div>
+                    <div class="col-md-6 pr-5">
+                      <h2 class="product-name"></h2>
+                      <p style="box-sizing: border-box;" class="product_desc">
+                        <h3 style="font-size: 70px; font-family:Verdana, Geneva, Tahoma, sans-serif;padding-right: 10px;">Juice Bottles </h3>
+                      </p>
+                      <p style="font-size: 22px;">Enjoy every sip in style with this beautifully designed lavender juice cup  the perfect blend of elegance and functionality.</p>
+                      <p style="font-size: 18px;">Availability: In Stock</p>
+                      <p style="font-size: 18px;">Availability: In Stock</p>
+                      <p style="font-size: 18px;">Availability: In Stock</p>
+                      <p>
+                       <span style="text-decoration: line-through; color: gray; font-size: 19px;"> RS.180.00 PKR</span>
+                      </p>
+                      <p>
+                        <span style="font-weight: bold; font-size: 19px;">RS.120.00 PKR</span>
+                      </p>
+      
+                                      <p style="font-size: 19px;">Review : &nbsp;&nbsp;&nbsp;
+                                         <i class="fa fa-star text-"      style="color: goldenrod;" ></i>
+                                         <i class="fa fa-star text- ml-2" style="color: goldenrod;"></i>
+                                         <i class="fa fa-star text- ml-2" style="color: goldenrod;"></i>
+                                         <i class="fa fa-star text- ml-2" style="color: goldenrod;"></i>
+                                         <i class="fa fa-star ml-2" style="color: gray;"></i>
+                                      </p>
+                                      <h4 class="product_price"></h4>
+                                      
+                                      <button id="allert4" class="btn mt-2" style="width:150px; background-color: darkgoldenrod; color: white; font-size: 20px;" >Add to Card</button>
+                                      <button id="add4" class="btn mt-2" style="width:150px; background-color: white; color: darkgoldenrod; font-size: 20px; border: 2px solid goldenrod; font-weight: bold;" >Wishlist</button>
+                    </div>
+                  </div>
+                </div> 
+                </div>
+                
+              </div>
+            </div>
+          <!-- 6Modal -->
+    <div class="modal fade" id="staticBackdrop6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content" style="transform: scaleX(1.4);width: 2000px;">
+        
+          <div class="modal-header pb-2">
+            <h1 class="font-weight-light ml-4" style="padding-left: 16px;">Elegant juice cups(set of 3)
+            </h1>
+            <!-- <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5> -->
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body"> 
+            <div class="row mt-2 p-3">
+              <div class="col-md-6">
+                <img src="images/juice bottles 3 pieces fancy.jpg" alt="" style="width: 85%;
+                height: 600px;">
+              </div>
+              <div class="col-md-6 pr-5">
+                <h2 class="product-name"></h2>
+                <p style="box-sizing: border-box;" class="product_desc">
+                  <h3 style="font-size: 70px; font-family:Verdana, Geneva, Tahoma, sans-serif;padding-right: 10px;">Juice Bottles </h3>
+                </p>
+                <p style="font-size: 22px;">Elevate your beverage experience with this elegant set of 3 juice cups  timeless design, perfect for any occasion.</p>
+                <p style="font-size: 18px;">Availability: In Stock</p>
+                <p style="font-size: 18px;">Availability: In Stock</p>
+                <p style="font-size: 18px;">Availability: In Stock</p>
+                <p>
+                 <span style="text-decoration: line-through; color: gray; font-size: 19px;"> RS.550.00 PKR</span>
+                </p>
+                <p>
+                  <span style="font-weight: bold; font-size: 19px;">RS.410.00 PKR</span>
+                </p>
+
+                                <p style="font-size: 19px;">Review : &nbsp;&nbsp;&nbsp;
+                                   <i class="fa fa-star text-"      style="color: goldenrod;" ></i>
+                                   <i class="fa fa-star text- ml-2" style="color: goldenrod;"></i>
+                                   <i class="fa fa-star text- ml-2" style="color: goldenrod;"></i>
+                                   <i class="fa fa-star text- ml-2" style="color: goldenrod;"></i>
+                                   <i class="fa fa-star ml-2" style="color: gray;"></i>
+                                </p>
+                                <h4 class="product_price"></h4>
+                                
+                                <button id="allert5" class="btn mt-2" style="width:150px; background-color: darkgoldenrod; color: white; font-size: 20px;" >Add to Card</button>
+                                <button id="add5" class="btn mt-2" style="width:150px; background-color: white; color: darkgoldenrod; font-size: 20px; border: 2px solid goldenrod; font-weight: bold;" >Wishlist</button>
+              </div>
+            </div></div> 
+          </div>
+          
+        </div>
+    </div>
+
+            <!-- 7Modal -->
+            <div class="modal fade" id="staticBackdrop7" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content" style="transform: scaleX(1.4);width: 2000px;">
+                
+                  <div class="modal-header pb-2">
+                    <h1 class="font-weight-light ml-4" style="padding-left: 16px;">Matte juice bottles(set of 3)
+                    </h1>
+                    <!-- <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5> -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body"> 
+                    <div class="row mt-2 p-3">
+                      <div class="col-md-6">
+                        <img src="images/juice bottles Aesthetic pack of 3.jpg" alt="" style="width: 85%;
+                        height: 600px;">
+                      </div>
+                      <div class="col-md-6 pr-5">
+                        <h2 class="product-name"></h2>
+                        <p style="box-sizing: border-box;" class="product_desc">
+                          <h3 style="font-size: 70px; font-family:Verdana, Geneva, Tahoma, sans-serif;padding-right: 10px;">Juice Bottles </h3>
+                        </p>
+                        <p style="font-size: 22px;">Refine your refreshment routine with this set of 3 matte juice bottles modern, durable, and effortlessly chic.</p>
+                        <p style="font-size: 18px;">Availability: In Stock</p>
+                        <p style="font-size: 18px;">Availability: In Stock</p>
+                        <p style="font-size: 18px;">Availability: In Stock</p>
+                        <p>
+                         <span style="text-decoration: line-through; color: gray; font-size: 19px;"> RS.280.00 PKR</span>
+                        </p>
+                        <p>
+                          <span style="font-weight: bold; font-size: 19px;">RS.155.00 PKR</span>
+                        </p>
+        
+                                        <p style="font-size: 19px;">Review : &nbsp;&nbsp;&nbsp;
+                                           <i class="fa fa-star text-"      style="color: goldenrod;" ></i>
+                                           <i class="fa fa-star text- ml-2" style="color: goldenrod;"></i>
+                                           <i class="fa fa-star text- ml-2" style="color: goldenrod;"></i>
+                                           <i class="fa fa-star text- ml-2" style="color: grey;"></i>
+                                           <i class="fa fa-star ml-2" style="color: gray;"></i>
+                                        </p>
+                                        <h4 class="product_price"></h4>
+                                        
+                                        <button id="allert6" class="btn mt-2" style="width:150px; background-color: darkgoldenrod; color: white; font-size: 20px;" >Add to Card</button>
+                                        <button id="add6"class="btn mt-2" style="width:150px; background-color: white; color: darkgoldenrod; font-size: 20px; border: 2px solid goldenrod; font-weight: bold;" >Wishlist</button>
+                      </div>
+                    </div>
+                  </div> 
+                  </div>
+                  
+                </div>
+              </div>
+
+          
+<!-- 8Modal -->
+<div class="modal fade" id="staticBackdrop8" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content" style="transform: scaleX(1.4);width: 2000px;">
+    
+      <div class="modal-header pb-2">
+        <h1 class="font-weight-light ml-4" style="padding-left: 16px;">Micky style juice cups
+        </h1>
+        <!-- <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5> -->
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body"> 
+        <div class="row mt-2 p-3">
+          <div class="col-md-6">
+            <img src="images/juice bottles micky styles cups 2.jpg" alt="" style="width: 85%;
+            height: 600px;">
+          </div>
+          <div class="col-md-6 pr-5">
+            <h2 class="product-name"></h2>
+            <p style="box-sizing: border-box;" class="product_desc">
+              <h3 style="font-size: 70px; font-family:Verdana, Geneva, Tahoma, sans-serif;padding-right: 10px;">Juice Bottles </h3>
+            </p>
+            <p style="font-size: 22px;">Add a playful touch to your drinks with these Mickey-style juice cups fun, charming, and perfect for all ages</p>
+            <p style="font-size: 18px;">Availability: In Stock</p>
+            <p style="font-size: 18px;">Availability: In Stock</p>
+            <p style="font-size: 18px;">Availability: In Stock</p>
+            <p>
+             <span style="text-decoration: line-through; color: gray; font-size: 19px;"> RS.355.00 PKR</span>
+            </p>
+            <p>
+              <span style="font-weight: bold; font-size: 19px;">RS.255.00 PKR</span>
+            </p>
+
+                            <p style="font-size: 19px;">Review : &nbsp;&nbsp;&nbsp;
+                               <i class="fa fa-star text-"      style="color: goldenrod;" ></i>
+                               <i class="fa fa-star text- ml-2" style="color: goldenrod;"></i>
+                               <i class="fa fa-star text- ml-2" style="color: goldenrod;"></i>
+                               <i class="fa fa-star text- ml-2" style="color: goldenrod;"></i>
+                               <i class="fa fa-star ml-2" style="color: gray;"></i>
+                            </p>
+                            <h4 class="product_price"></h4>
+                            
+                            <button id="allert7" class="btn mt-2" style="width:150px; background-color: darkgoldenrod; color: white; font-size: 20px;" >Add to Card</button>
+                            <button id="add7" class="btn mt-2" style="width:150px; background-color: white; color: darkgoldenrod; font-size: 20px; border: 2px solid goldenrod; font-weight: bold;" >Wishlist</button>
+          </div>
+        </div>
+      </div> 
+      </div>
+      
+    </div>
+  </div>
+  <!--9 Modal -->
+  <div class="modal fade" id="staticBackdrop9" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content" style="transform: scaleX(1.4);width: 2000px;">
+      
+        <div class="modal-header pb-2">
+          <h1 class="font-weight-light ml-4" style="padding-left: 16px;">MINI Juice bottles</h1>
+          <!-- <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5> -->
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body"> 
+          <div class="row mt-2 p-3">
+            <div class="col-md-6">
+              <img src="images/juice bottles mini.jpg" alt="" style="width: 85%;
+              height: 600px;">
+            </div>
+            <div class="col-md-6 pr-5">
+              <h2 class="product-name"></h2>
+              <p style="box-sizing: border-box;" class="product_desc">
+                <h3 style="font-size: 70px; font-family:Verdana, Geneva, Tahoma, sans-serif;padding-right: 10px;">Juice Bottles </h3>
+              </p>
+              <p style="font-size: 22px;">"Compact and cute, these mini juice bottles are perfect for serving refreshing beverages in style at home."</p>
+              <p style="font-size: 18px;">Availability: In Stock</p>
+              <p style="font-size: 18px;">Availability: In Stock</p>
+              <p style="font-size: 18px;">Availability: In Stock</p>
+              <p>
+               <span style="text-decoration: line-through; color: gray; font-size: 19px;"> RS.235.00 PKR</span>
+              </p>
+              <p>
+                <span style="font-weight: bold; font-size: 19px;">RS.165.00 PKR</span>
+              </p>
+
+                              <p style="font-size: 19px;">Review : &nbsp;&nbsp;&nbsp;
+                                 <i class="fa fa-star text-"      style="color: goldenrod;" ></i>
+                                 <i class="fa fa-star text- ml-2" style="color: goldenrod;"></i>
+                                 <i class="fa fa-star text- ml-2" style="color: goldenrod;"></i>
+                                 <i class="fa fa-star text- ml-2" style="color: grey;"></i>
+                                 <i class="fa fa-star ml-2" style="color: gray;"></i>
+                              </p>
+                              <h4 class="product_price"></h4>
+                              
+                              <button id="allert8" class="btn mt-2" style="width:150px; background-color: darkgoldenrod; color: white; font-size: 20px;" >Add to Card</button>
+                              <button id="add8" class="btn mt-2" style="width:150px; background-color: white; color: darkgoldenrod; font-size: 20px; border: 2px solid goldenrod; font-weight: bold;" >Wishlist</button>
+            </div>
+          </div>
+        </div> 
+        </div>
+        
+      </div>
+    </div>
+      </div>
+     <!-- Footer Start -->
+     <div class="mydiv-2">
+      <div class="container footer">
+        <div class="row">
+          <div class="col-4 head">
+            <h3><a href="index.html">PETBot</a></h3>
+            <p>Pet Bot is a company focused on transforming plastic bottles into innovative, sustainable products. They
+              specialize in recycling and repurposing PET plastic to reduce environmental impact and promote eco-friendly
+              solutions.</p>
+          </div>
+          <div class="col-4 links">
+            <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="log-in.html">Log in</a></li>
+            <li><a href="sign-up.html">Sign up</a></li>
+          </ul>
+          </div>
+          <div class="col-4 f-icons d-flex align-items-center" style="flex-direction: column;">
+            <h4>SUBSCRIBE TODAY!</h4>
+            <a href="sign-up.html"><button type="submit" class="btn btn-subs subs1">
+              SIGN UP</button></a>
+            <ul>
+              <li><a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa-regular fa-envelope"></i></a></li>
+              <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
+              <li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest-p"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+      <script>
+        document.getElementById('allert').addEventListener('click',function(){
+        Swal.fire({
+        title: "Add to Cart!",
+        text: "Your product is added to your Cart.",
+        icon: "success"
+      });
+});
+document.getElementById('add').addEventListener('click',function(){
+  Swal.fire({
+  // position: "top-end",
+  icon: "success",
+  title: "added to wishlisht",
+  showConfirmButton: false,
+  timer: 1500
+});
+});
+
+
+
+document.getElementById('allert1').addEventListener('click',function(){
+        Swal.fire({
+        title: "Add to Cart!",
+        text: "Your product is added to your Cart.",
+        icon: "success"
+      });
+});
+
+document.getElementById('allert2').addEventListener('click',function(){
+        Swal.fire({
+        title: "Add to Cart!",
+        text: "Your product is added to your Cart.",
+        icon: "success"
+      });
+});
+
+document.getElementById('allert3').addEventListener('click',function(){
+        Swal.fire({
+        title: "Add to Cart!",
+        text: "Your product is added to your Cart.",
+        icon: "success"
+      });
+});
+
+document.getElementById('allert4').addEventListener('click',function(){
+        Swal.fire({
+        title: "Add to Cart!",
+        text: "Your product is added to your Cart.",
+        icon: "success"
+      });
+});
+
+document.getElementById('allert5').addEventListener('click',function(){
+        Swal.fire({
+        title: "Add to Cart!",
+        text: "Your product is added to your Cart.",
+        icon: "success"
+      });
+});
+
+document.getElementById('allert6').addEventListener('click',function(){
+        Swal.fire({
+        title: "Add to Cart!",
+        text: "Your product is added to your Cart.",
+        icon: "success"
+      });
+});
+document.getElementById('allert7').addEventListener('click',function(){
+        Swal.fire({
+        title: "Add to Cart!",
+        text: "Your product is added to your Cart.",
+        icon: "success"
+      });
+});
+document.getElementById('allert8').addEventListener('click',function(){
+        Swal.fire({
+        title: "Add to Cart!",
+        text: "Your product is added to your Cart.",
+        icon: "success"
+      });
+});
+
+document.getElementById('add1').addEventListener('click',function(){
+  Swal.fire({
+  // position: "top-end",
+  icon: "success",
+  title: "added to wishlisht",
+  showConfirmButton: false,
+  timer: 1500
+});
+});
+document.getElementById('add2').addEventListener('click',function(){
+  Swal.fire({
+  // position: "top-end",
+  icon: "success",
+  title: "added to wishlisht",
+  showConfirmButton: false,
+  timer: 1500
+});
+});
+document.getElementById('add3').addEventListener('click',function(){
+  Swal.fire({
+  // position: "top-end",
+  icon: "success",
+  title: "added to wishlisht",
+  showConfirmButton: false,
+  timer: 1500
+});
+});
+document.getElementById('add4').addEventListener('click',function(){
+  Swal.fire({
+  // position: "top-end",
+  icon: "success",
+  title: "added to wishlisht",
+  showConfirmButton: false,
+  timer: 1500
+});
+});
+document.getElementById('add5').addEventListener('click',function(){
+  Swal.fire({
+  // position: "top-end",
+  icon: "success",
+  title: "added to wishlisht",
+  showConfirmButton: false,
+  timer: 1500
+});
+});
+document.getElementById('add6').addEventListener('click',function(){
+  Swal.fire({
+  // position: "top-end",
+  icon: "success",
+  title: "added to wishlisht",
+  showConfirmButton: false,
+  timer: 1500
+});
+});
+document.getElementById('add7').addEventListener('click',function(){
+  Swal.fire({
+  // position: "top-end",
+  icon: "success",
+  title: "added to wishlisht",
+  showConfirmButton: false,
+  timer: 1500
+});
+});
+document.getElementById('add8').addEventListener('click',function(){
+  Swal.fire({
+  // position: "top-end",
+  icon: "success",
+  title: "added to wishlisht",
+  showConfirmButton: false,
+  timer: 1500
+});
+});const toggleMenu = document.querySelector('.toggle-menu');
+const sideDiv = document.querySelector('.side-div');
+const categoryList = document.querySelector('.category-list');
+
+toggleMenu.addEventListener('click', () => {
+  sideDiv.classList.toggle('active');
+  categoryList.classList.toggle('active');
+});
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth <= 768) {
+    sideDiv.classList.remove('active');
+    categoryList.classList.remove('active');
+  }const toggleMenu = document.querySelector('.toggle-menu');
+const sideDiv = document.querySelector('.side-div');
+const categoryList = document.querySelector('.category-list');
+
+toggleMenu.addEventListener('click', () => {
+  sideDiv.classList.toggle('active');
+  categoryList.classList.toggle('active');
+});
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth <= 768) {
+    sideDiv.classList.remove('active');
+    categoryList.classList.remove('active');
+  }
+});
+
+});
+      </script>
+      </body>
+   </html>
+
+
+    

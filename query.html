@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PETBot</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/index.css">
+  <link rel="shortcut icon" href="assessts/images/PETBot logo.png">
+  <!-- <link rel="stylesheet" href="CSS/footer.css"> -->
+
+    <link rel="stylesheet" href="CSS/query.css">
+    
+    <script src="JS/bootstrap.bundle.js"></script>
+    <script src="JS/jquery-3.7.1.js"></script>
+    <style>
+        .mydiv-2 {
+          width: 100%;
+          height: auto;
+          /* border: 2px solid red; */
+          background-color: rgba(0, 0, 0, 0.882);
+          margin-top: 30px;
+        }
+    
+        .footer {
+          height: auto;
+          padding: 30px;
+        }
+    
+        .head, .links, .f-icons{
+          /* border: 2px solid red; */
+          padding-top: 30px;
+        }
+    
+        .links h4, .f-icons h4 {
+          font-size: 28px;
+          color: darkgoldenrod;
+        }
+    
+        .links ul li {
+          list-style: none;
+          line-height: 30px;
+          font-size: 18px;
+        }
+    
+        .links ul li a {
+          text-decoration: none;
+          color:white;
+          transition: all .5s;
+        }
+    
+        .links ul li a:hover {
+          color: darkgoldenrod;
+        }
+    
+        .head a {
+          text-decoration: none;
+          color:darkgoldenrod;
+          font-weight: bold;
+          font-size: 32px;
+        }
+        .head p {
+          color: whitesmoke;
+          font-size: 17px;
+        }
+    
+        .links h4 {
+          padding-left: 30px;
+        }
+    
+        .f-icons input[type="email"] {
+          width: 260px;
+          height: 40px;
+          background-color: white;
+          border: none;
+          text-indent: 10px;
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+        .subs1{
+    width: 180px;
+      height: 40px;
+      background-color:darkgoldenrod;
+      border: none;
+      border-radius: 50px;
+      color: white;
+      font-size: 14px;
+      margin-left: 10px;
+      margin-bottom: 10px;
+    }
+    
+        .f-icons ul li {
+          list-style: none;
+          display: inline;
+          padding-right: 20px;
+          font-size: 24px;
+          padding-top: 30px;
+        }
+    
+        .f-icons ul li a {
+          color: grey;
+          font-weight: lighter;
+          transition: all .5s;
+        }
+    
+        .f-icons ul li a:hover {
+          color:darkgoldenrod;
+        }
+    
+        @media screen and (max-width:768px) {
+          .f-icons input[type="email"] {
+            width: 160px;
+            font-size: 14px;
+            height: 30px;
+          }
+    
+          .f-icons ul li {
+            font-size: 18px;
+            padding-right: 10px;
+          }
+    
+          .links ul li {
+            font-size: 14px;
+            line-height: 26px;
+          }
+          .links h4, .f-icons h4 {
+            font-size: 20px;
+          }
+        }
+    
+        @media screen and (max-width:576px) {
+          .col-4 {
+            width: 100%;
+          }
+    
+          .mydiv-2 {
+            height: auto;
+          }
+        }
+      </style>
+</head> 
+<body>
+    <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg navbar-light position-fixed" style="z-index:1;">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-3" href="index.html"><img src="images/PETBot logo.png" alt="logo" width="40px" height="36px"
+          style="margin-top: -10px; margin-left: 20px;"><span
+          style="color: black; font-family: cursive; font-weight:bold; font-style: italic; font-size: 28px;">PET</span><span
+          style="color: darkgoldenrod; font-family:cursive; font-weight: bold; font-style: italic; font-size: 28px;">Bot</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Categories
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <ul>
+                <li><a class="dropdown-item" href="categories.html">BOTTLES</a></li>
+                <li><a class="dropdown-item" href="categories.html">Water Bottles</a></li>
+                <li><a class="dropdown-item" href="juice.html">Juice Bottles</a></li>
+                <li><a class="dropdown-item" href="Hair-care.html">Hair Care Bottles</a></li>
+                <li><a class="dropdown-item" href="Pharma.html">Pharmacuetical Bottles</a></li>
+                <li><a class="dropdown-item" href="spray.html">Spray Bottles</a></li>
+                <li><a class="dropdown-item" href="Edible.html">Edible Oil Bottles</a></li>
+                <li><a class="dropdown-item" href="House.html">Household Chemical
+                    Bottles</a></li>
+              </ul>
+              <ul>
+                <li><a class="dropdown-item" href>JARS</a></li>
+                <li><a class="dropdown-item" href="spice.html">Spice Jars</a></li>
+                <li><a class="dropdown-item" href="candle.html">Candles Jar</a></li>
+                <li><a class="dropdown-item" href="makeup.html">Makeup Jars</a></li>
+                <li><a class="dropdown-item" href="cookies.html">Cookies Jars</a></li>
+                <li><a class="dropdown-item" href="sauce.html">Sauce Jars</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutUs.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="query.html">Queries</a>
+          </li>
+          <div class="nav-icons">
+            <ul>
+              <li class="nav-item1">
+                <a class="nav-link" href="log-in.html"><span><i class="fa-solid fa-user"></i></span>
+                  Login</a>
+              </li>
+            </ul>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Banner Start -->
+    <!-- banner start  -->
+    <!-- <div class="wrapper"> -->
+    <div class="FAQ-banner">
+        <h1>Everything You Need To <br> Know About Petbot </h1>
+        <p>Hey there! Welcome to the PetBottles FAQ page. We know you might have a few questions, <br> and we’re here to
+            help. Whether you’re curious about our bottles, <br>our sustainability efforts, or how to recycle like a
+            pro, <br>
+            we’ve got you covered. Let’s dive in</p>
+
+
+    </div>
+    <div class="accordian-container">
+        <div class="accordian-header">
+            Got Questions? we've got answers
+        </div>
+        <div class="accordian-body">
+            <ul>
+                <li>
+                    <div class="li-que">
+                        <div class="FAQ-btn"></div>
+                        <p>What exactly is a PET bottle?</p>
+                    </div>
+                    <div class="li-ans">
+                        Great question! PET stands for polyethylene terephthalate. It’s a super strong, lightweight
+                        plastic that's perfect for packaging everything from your favorite beverages to cosmetics and
+                        even household products. It’s crystal-clear, durable, and one of the most recyclable plastics
+                        out there. In short? It’s a trusty companion for all your liquid needs
+                    </div>
+
+                </li>
+                <li>
+                    <div class="li-que">
+                        <div class="FAQ-btn"></div>
+                        <p>Are PET bottles safe for food and drink?</p>
+                    </div>
+                    <div class="li-ans">
+                        Absolutely! Our PET bottles are designed with food-grade standards in mind, so they’re totally
+                        safe for storing your beverages and other consumables. No BPA, no worries. Whether it's a
+                        chilled soda or refreshing juice, your drink is in good hands.
+
+                    </div>
+                </li>
+                <li>
+                    <div class="li-que">
+                        <div class="FAQ-btn"></div>
+                        <p>Can I recycle my PET bottles?</p>
+                    </div>
+                    <div class="li-ans">
+                        You bet! PET bottles are 100% recyclable. In fact, PET is one of the most widely recycled
+                        plastics globally. Once you're done with that bottle, make sure to give it a quick rinse and pop
+                        it into the recycling bin. Together, we can keep the planet happy and healthy
+                    </div>
+
+                </li>
+                <li>
+                    <div class="li-que">
+                        <div class="FAQ-btn"></div>
+                        <p> Are our bottles eco-friendly?</p>
+                    </div>
+                    <div class="li-ans">
+                        Sustainability is at the heart of what we do. We use recycled PET (rPET) wherever possible to
+                        reduce waste and give plastic a second life. Plus, all of our bottles are 100% recyclable, so
+                        they’re good for the environment—good for you, and good for Mother Earth
+
+                    </div>
+                </li>
+                <li>
+                    <div class="li-que">
+                        <div class="FAQ-btn"></div>
+                        <p>Can I reuse my PET bottle?</p>
+                    </div>
+                    <div class="li-ans">
+                        While PET bottles are great for single use, if you choose to reuse them, just make sure they’re
+                        cleaned thoroughly. For long-term reuse, however, we recommend using bottles specifically
+                        designed for multiple uses (like reusable water bottles). PET bottles are made for convenience,
+                        but if you're looking to be extra eco-conscious, recycling them is the way to go
+                    </div>
+
+                </li>
+                <li>
+                    <div class="li-que">
+                        <div class="FAQ-btn"></div>
+                        <p> Can PET bottles hold hot liquids?</p>
+                    </div>
+                    <div class="li-ans">
+                        PET bottles are perfect for cold and room-temperature liquids, but they’re not the best for hot
+                        stuff. If you want to store a hot beverage, like coffee or tea, we recommend using containers
+                        made for high temperatures to keep everything safe and secure.
+
+                    </div>
+                </li>
+                <li>
+                    <div class="li-que">
+                        <div class="FAQ-btn"></div>
+                        <p>Do your bottles come in custom sizes or designs?</p>
+                    </div>
+                    <div class="li-ans">
+                        Yes, yes, and yes! Whether you're a business looking to create branded bottles or you need a
+                        custom size for a special project, we’ve got options. Just drop us a line, and we’ll help you
+                        create the perfect bottle for your needs.
+                    </div>
+
+                </li>
+                <li>
+                    <div class="li-que">
+                        <div class="FAQ-btn"></div>
+                        <p>How long do PET bottles last?</p>
+                    </div>
+                    <div class="li-ans">
+                        PET bottles have a long shelf life when stored properly. Keep them in a cool, dry place, away
+                        from sunlight, and they’ll stay in tip-top shape. If you’re using the bottles to store liquids,
+                        be sure to check the expiration date on the contents to be safe
+                    </div>
+
+                </li>
+                <li>
+                    <div class="li-que">
+                        <div class="FAQ-btn"></div>
+                        <p>How do I get in touch with customer support?</p>
+                    </div>
+                    <div class="li-ans">
+                        Got more questions? We’re here for you! You can contact us by email at
+                        [support@petbottlescompany.com], call us at [phone number], or chat with us directly on our
+                        website. We love hearing from you
+                    </div>
+
+                </li>
+                <li>
+                    <div class="li-que">
+                        <div class="FAQ-btn"></div>
+                        <p>Are your PET bottles UV-resistant?</p>
+                    </div>
+                    <div class="li-ans">
+                        Yes! PET bottles offer some natural resistance to UV light, which helps protect your beverages
+                        or liquids from harmful sunlight exposure. But for the best shelf life and taste, we still
+                        recommend storing bottles in a cool, dark place whenever possible.
+                    </div>
+
+                </li>
+                <li>
+                    <div class="li-que">
+                        <div class="FAQ-btn"></div>
+                        <p>Can I store carbonated drinks in PET bottles?</p>
+                    </div>
+                    <div class="li-ans">
+                        Absolutely! PET bottles are perfect for carbonated beverages, thanks to their strength and
+                        flexibility. They can handle the pressure from carbonated drinks like soda, sparkling water, and
+                        kombucha. Just make sure the bottles are properly sealed to avoid any fizzing out
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- banner end  -->
+
+
+   <!-- Footer Start -->
+   <div class="mydiv-2">
+    <div class="container footer">
+      <div class="row">
+        <div class="col-4 head">
+          <h3><a href="index.html">PETBot</a></h3>
+          <p>Pet Bot is a company focused on transforming plastic bottles into innovative, sustainable products. They
+            specialize in recycling and repurposing PET plastic to reduce environmental impact and promote eco-friendly
+            solutions.</p>
+        </div>
+        <div class="col-4 links">
+          <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="log-in.html">Log in</a></li>
+          <li><a href="sign-up.html">Sign up</a></li>
+        </ul>
+        </div>
+        <div class="col-4 f-icons d-flex align-items-center" style="flex-direction: column;">
+          <h4>SUBSCRIBE TODAY!</h4>
+          <a href="sign-up.html"><button type="submit" class="btn btn-subs subs1">
+            SIGN UP</button></a>
+          <ul>
+            <li><a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa-regular fa-envelope"></i></a></li>
+            <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest-p"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+|
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $(".accordian-body .li-que").click(function () {
+            $(this).parent().toggleClass("active");
+        });
+    })
+</script>
+
+</html>

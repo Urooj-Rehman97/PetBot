@@ -1,0 +1,924 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+/* Navbar Start */
+
+.dropdown-menu ul{
+    list-style: none;
+    padding: 0;
+}
+.dropdown-menu.show {
+  display: flex;
+}
+.dropdown-menu li a{
+  color:whitesmoke;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.dropdown-menu li:first-child a{
+  font-weight: bold;
+  font-size: 18px;
+  color: darkgoldenrod;
+}
+.dropdown-menu{
+    border-radius:2px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .23);
+    background-color: black;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    
+}
+.nav-icons ul li{
+    display: inline-block;
+}
+.nav-icons{
+   margin-left: 450px;
+}
+.nav-item {
+  font-size: 17px;
+  padding-left: 20px;
+}
+.nav-link:hover{
+  color: darkgoldenrod;
+}
+.navbar{
+  /* height: 60px; */
+  color: black;
+  width:100%;
+  background-color: rgb(231, 225, 225)
+}
+.navbar-brand{
+  /* border: 2px solid red; */
+  height: 42px;
+  text-align: center;
+  font-size: 24px;
+ padding-bottom: 46px;
+}
+/* Gallery */
+.gallery{
+    padding-top: 70px;
+}
+.pics h1{
+    text-align: center;
+    font-weight: bold;
+}
+.col-3{
+    margin: 10px;
+    width: 260px;
+    display: none;
+}
+.pic1{
+    height: 250px;
+    background-image: url(../images/waterbottles1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic2{
+    height: 250px;
+    background-image: url(../images/water-bottles\ with\ wooden\ cap.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic3{
+    height: 250px;
+    background-image: url(../images/water\ bottle\ set\ 5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic4{
+    height: 250px;
+    background-image: url(../images/water\ bottle\ transparent\ fancy2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic5{
+    height: 250px;
+    background-image: url(../images/water\ bottles\ multi\ color.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic6{
+    height: 250px;
+    background-image: url(../images/water\ bottles\ fgor\ kidz.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic7{
+    height: 250px;
+    background-image: url(../images/water\ bottle\ in\ black.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic8{
+    height: 250px;
+    background-image: url(../images/sporty-girl-showing-bottle-water.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic9{
+    height: 250px;
+    background-image: url(../images/PP-Frosted-Water-Bottle-Flip1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic10{
+    height: 250px;
+    background-image: url(../images/cylindrical\ juice\ bottle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic11{
+    height: 250px;
+    background-image: url(../images/juice\ bottles\ mini.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic12{
+    height: 250px;
+    background-image: url(../images/juice\ bottle\ lavender\ cup1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic13{
+    height: 250px;
+    background-image: url(../images/juice\ bottles\ Aesthetic\ pack\ of\ 3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic14{
+    height: 250px;
+    background-image: url(../images/juice\ bottles\ U\ shapes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic15{
+    height: 250px;
+    background-image: url(../images/Square\ Shape\ juice\ bottles.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic16{
+    height: 250px;
+    background-image: url(../images/juice\ bottles\ micky\ styles\ cups\ 2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic17{
+    height: 250px;
+    background-image: url(../images/juice\ bottles\ 3\ pieces\ fancy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic18{
+    height: 250px;
+    background-image: url(../images/juice\ bottle\ in\ baby\ pink.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic19{
+    height: 250px;
+    background-image: url(../images/hair\ care\ black\ &\ gold\ shampoo+conditioner\ bottle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic20{
+    height: 250px;
+    background-image: url(../images/hair\ care\ oil\ bottle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic21{
+    height: 250px;
+    background-image: url(../images/hair\ care\ pet\ bottle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic22{
+    height: 250px;
+    background-image: url(../images/hair\ care\ conditioner\ bottle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic23{
+    height: 250px;
+    background-image: url(../images/hair\ care\ shampoo\ conditioner\ 2\ bottls.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic24{
+    height: 250px;
+    background-image: url(../images/hair\ care\ Root\ Comb\ Applicator\ Bottle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic25{
+    height: 250px;
+    background-image: url(../images/hair\ care\ syrum\ bottles1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic26{
+    height: 250px;
+    background-image: url(../images/hair\ care\ shampoo.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic27{
+    height: 250px;
+    background-image: url(../images/hair\ care\ black\ syrum\ bottles.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic28{
+    height: 250px;
+    background-image: url(../images/pharma\ 2\ small\ capsule\ containers1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic29{
+    height: 250px;
+    background-image: url(../images/pharma\ senitizer\ bottle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic30{
+    height: 250px;
+    background-image: url(../images/pharma\ bottles.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic31{
+    height: 250px;
+    background-image: url(../images/pharma\ capsule\ container\ set1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic32{
+    height: 250px;
+    background-image: url(../images/pharma\ blood\ test\ tube1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic33{
+    height: 250px;
+    background-image: url(../images/pharma\ drip\ set.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic34{
+    height: 250px;
+    background-image: url(../images/pharma\ syrup\ bottle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic35{
+    height: 250px;
+    background-image: url(../images/pharma\ injection.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic36{
+    height: 250px;
+    background-image: url(../images/pharma\ nasal\ spray\ pump\ bottle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic37{
+    height: 250px;
+    background-image: url(../images/spray\ \ bottle\ atomizer\ black.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic38{
+    height: 250px;
+    background-image: url(../images/spray-bottle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic39{
+    height: 250px;
+    background-image: url(../images/spray\ bottle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic40{
+    height: 250px;
+    background-image: url(../images/spray-pet-bottle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic41{
+    height: 250px;
+    background-image: url(../images/spray\ pet\ bottle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic42{
+    height: 250px;
+    background-image: url(../images/spray\ bottle\ atomizer\ light\ brown.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic43{
+    height: 250px;
+    background-image: url(../images/spray\ bottle\ black\ ....jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic44{
+    height: 250px;
+    background-image: url(../images/Spray\ Bottle\ household.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic45{
+    height: 250px;
+    background-image: url(../images/spray\ portable\ hand\ pump.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic46{
+    height: 250px;
+    background-image: url(../images/edible\ oil1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic47{
+    height: 250px;
+    background-image: url(../images/edible\ oil\ pakkaging\ bottles.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic48{
+    height: 250px;
+    background-image: url(../images/edible\ oil\ bottle\ single1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic49{
+    height: 250px;
+    background-image: url(../images/edible\ oil\ bottle\ laek\ proof\ edible.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic50{
+    height: 250px;
+    background-image: url(../images/edible\ oil\ spray\ bottle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic51{
+    height: 250px;
+    background-image: url(../images/edible\ oil\ bottle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic52{
+    height: 250px;
+    background-image: url(../images/edible\ oil\ bottle\ set\ of\ 3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic53{
+    height: 250px;
+    background-image: url(../images/edible\ oil\ set\ of\ 5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic54{
+    height: 250px;
+    background-image: url(../images/edible\ oil\ 4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic55{
+    height: 250px;
+    background-image: url(../images/household\ cchemical\ cleaning-products.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic56{
+    height: 250px;
+    background-image: url(../images/household\ chemical\ hand\ wash1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic57{
+    height: 250px;
+    background-image: url(../images/household\ chemical\ bodywash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic58{
+    height: 250px;
+    background-image: url(../images/household\ chemical\ hand\ wash\ bottle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic59{
+    height: 250px;
+    background-image: url(../images/household\ PETBOT.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic60{
+    height: 250px;
+    background-image: url(../images/household\ cgemical\ hand\ sanitizer\ kit1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic61{
+    height: 250px;
+    background-image: url(../images/Household-Chem.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic62{
+    height: 250px;
+    background-image: url(../images/household\ chemical\ set\ of\ 4\ bottles\ hand\ washes\ etc1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic63{
+    height: 250px;
+    background-image: url(../images/household\ chemical\ detergent\ &\ bleach\ container.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic64{
+    height: 250px;
+    background-image: url(../images/candle\ jar1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic65{
+    height: 250px;
+    background-image: url(../images/candle\ jar2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic66{
+    height: 250px;
+    background-image: url(../images/candle\ jar3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic67{
+    height: 250px;
+    background-image: url(../images/candle\ jar4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic68{
+    height: 250px;
+    background-image: url(../images/candle\ jar5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic69{
+    height: 250px;
+    background-image: url(../images/candle\ jar\ plastic\ cover\ candle\ jar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic70{
+    height: 250px;
+    background-image: url(../images/candle\ jar\ pumpkin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic71{
+    height: 250px;
+    background-image: url(../images/candle\ jar\ scented1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic72{
+    height: 250px;
+    background-image: url(../images/spice\ jar1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic73{
+    height: 250px;
+    background-image: url(../images/spice\ jar2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic74{
+    height: 250px;
+    background-image: url(../images/spice\ jar3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic75{
+    height: 250px;
+    background-image: url(../images/spoice\ jar\ set\ of\ 4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic76{
+    height: 250px;
+    background-image: url(../images/spice\ jar\ storage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic77{
+    height: 250px;
+    background-image: url(../images/spice\ jars\ small.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic78{
+    height: 250px;
+    background-image: url(../images/spice\ jar\ set.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic79{
+    height: 250px;
+    background-image: url(../images/spice\ jar\ set\ trnsparent.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic80{
+    height: 250px;
+    background-image: url(../images/spice\ jar12\ pcs\ PET\ Jars\ with\ lids.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic81{
+    height: 250px;
+    background-image: url(../images/spice\ jar\ 2\ in\ 1shakker1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic82{
+    height: 250px;
+    background-image: url(../images/cookies\ jar1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic83{
+    height: 250px;
+    background-image: url(../images/cookies\ jar2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic84{
+    height: 250px;
+    background-image: url(../images/cookies\ jar3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic85{
+    height: 250px;
+    background-image: url(../images/cookies\ jar4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic86{
+    height: 250px;
+    background-image: url(../images/cookies\ jar5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic87{
+    height: 250px;
+    background-image: url(../images/cookies\ jar6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic88{
+    height: 250px;
+    background-image: url(../images/cookies\ jar7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic89{
+    height: 250px;
+    background-image: url(../images/cookies\ jar8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic90{
+    height: 250px;
+    background-image: url(../images/cookies\ jar9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic91{
+    height: 250px;
+    background-image: url(../images/sauce\ jar1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic92{
+    height: 250px;
+    background-image: url(../images/sauce\ jar2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic93{
+    height: 250px;
+    background-image: url(../images/sauce\ jar3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic94{
+    height: 250px;
+    background-image: url(../images/sauce\ jar4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic95{
+    height: 250px;
+    background-image: url(../images/sauce\ jar5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic96{
+    height: 250px;
+    background-image: url(../images/sauce\ jar6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic97{
+    height: 250px;
+    background-image: url(../images/sauce\ jar7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic98{
+    height: 250px;
+    background-image: url(../images/sauce\ jar8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic99{
+    height: 250px;
+    background-image: url(../images/sauce\ jar\ reusable.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic100{
+    height: 250px;
+    background-image: url(../images/make\ up\ jars1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic101{
+    height: 250px;
+    background-image: url(../images/make\ up\ jars2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic102{
+    height: 250px;
+    background-image: url(../images/makeup\ jar3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic103{
+    height: 250px;
+    background-image: url(../images/makeup\ jars4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic104{
+    height: 250px;
+    background-image: url(../images/makeup\ jars5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic105{
+    height: 250px;
+    background-image: url(../images/makeup\ jars6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic106{
+    height: 250px;
+    background-image: url(../images/make\ up\ jars7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic107{
+    height: 250px;
+    background-image: url(../images/makeup\ jars\ 8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic108{
+    height: 250px;
+    background-image: url(../images/makeup\ jars\ cream\ jars.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.load-more{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 50px;
+  background-color:darkgoldenrod;
+  color: whitesmoke;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  width: 110px;
+  height: 38px;
+  cursor: pointer;
+}
+.load-more:hover{
+   background-color: rgba(184, 135, 11, 0.603);
+}
+/* Footer start */
+footer{
+    /* position: relative; */
+    width: 100%;
+    height: auto;
+    padding: 50px 80px;
+    background: #050505;
+  }
+  footer .container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-gap: 50px;
+  }
+  footer .container .sec h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  footer .container .sec h2::before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background:darkgoldenrod;
+  }
+  footer .container .sec p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #fff;
+  }
+  .socila-icon{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 40px);
+    grid-gap: 10px;
+  }
+  .socila-icon li{
+    list-style: none;
+  }
+  .socila-icon li a{
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    background: #646060a9;
+    border-radius: 50%;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    transition: 0.5s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .socila-icon li a::before{
+    content: '';
+    position: absolute;
+    height: 40px;
+    width: 0;
+    top: 0;
+    left: 0;
+    background:darkgoldenrod;
+    transition: 0.5s;
+    z-index: -1;
+  }
+  .socila-icon li a:hover::before{
+    width: 40px;
+  }
+  .usefullinks{
+    position: relative;
+  }
+  .usefullinks li{
+    list-style: none;
+  }
+  .usefullinks li a{
+    text-decoration: none;
+    font-size: 16px;
+    list-style: none;
+    line-height: 30px;
+    color: #fff;
+    transition: 0.3s;
+  }
+  .usefullinks li a:hover{
+    color: darkgoldenrod;
+  }
+  .shop{
+    position: relative;
+  }
+  .shop li{
+    list-style: none;
+  }
+  .shop li a{
+    text-decoration: none;
+    font-size: 16px;
+    list-style: none;
+    line-height: 30px;
+    color: #fff;
+    transition: 0.3s;
+  }
+  .shop li a:hover{
+    color:darkgoldenrod;
+  }
+  footer .container .sec p a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+  }
+  footer .container .sec p a:hover{
+    color: #ff008c;
+  }
+  .contact{
+    position: relative;
+  }
+  .contact li{
+    list-style: none;
+  }
+  .contact li a{
+    text-decoration: none;
+    font-size: 16px;
+    list-style: none;
+    line-height: 30px;
+    color: #fff;
+    transition: 0.3s;
+  }
+  .contact li a:hover{
+    color:darkgoldenrod;
+  }
+  /* Responsive */
+  @media screen and (max-width:990px) {
+    footer .container{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 40px;
+    }
+    footer{
+        padding: 50px 40px;
+    }
+  }
+  @media screen and (max-width:500px){
+    footer .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  /* @media screen and (max-width:768px){
+    .nav-icons{
+        margin-left: -12px;
+     }
+  }
+  @media screen and (max-width:576px){
+    .nav-icons{
+        margin-left: -12px;
+     }
+  } */
+  @media screen and (max-width:996px){
+    .nav-icons{
+        margin-left: -12px;
+     }
+  }
+  @media screen and (min-width:1024px){
+    .nav-icons{
+        margin-left: 100px;
+     }
+     .nav-item {
+       font-size: 15px;
+       padding-left: 18px;
+     }
+  }
+  @media screen and (min-width:1400px){
+    .nav-icons{
+        margin-left: 450px;
+     }
+     .nav-item {
+       font-size: 17px;
+       padding-left: 20px;
+     }
+  }

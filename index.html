@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PETBot</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="shortcut icon" href="assessts/images/PETBot logo.png">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="CSS/bootstrap.css">
+  <link rel="stylesheet" href="CSS/index.css">
+  <!-- <link rel="stylesheet" href="CSS/footer.css"> -->
+  <script src="JS/bootstrap.bundle.js"></script>
+  <script src="JS/jquery-3.7.1.js"></script>
+  <style>
+    .mydiv-2 {
+      width: 100%;
+      height: auto;
+      /* border: 2px solid red; */
+      background-color: rgba(0, 0, 0, 0.882);
+      margin-top: 30px;
+    }
+
+    .footer {
+      height: auto;
+      padding: 30px;
+    }
+
+    .head, .links, .f-icons{
+      /* border: 2px solid red; */
+      padding-top: 30px;
+    }
+
+    .links h4, .f-icons h4 {
+      font-size: 28px;
+      color: darkgoldenrod;
+    }
+
+    .links ul li {
+      list-style: none;
+      line-height: 30px;
+      font-size: 18px;
+    }
+
+    .links ul li a {
+      text-decoration: none;
+      color:white;
+      transition: all .5s;
+    }
+
+    .links ul li a:hover {
+      color: darkgoldenrod;
+    }
+
+    .head a {
+      text-decoration: none;
+      color:darkgoldenrod;
+      font-weight: bold;
+      font-size: 32px;
+    }
+    .head p {
+      color: whitesmoke;
+      font-size: 17px;
+    }
+
+    .links h4 {
+      padding-left: 30px;
+    }
+
+    .f-icons input[type="email"] {
+      width: 260px;
+      height: 40px;
+      background-color: white;
+      border: none;
+      text-indent: 10px;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    .subs1{
+width: 180px;
+  height: 40px;
+  background-color:darkgoldenrod;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-size: 14px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+    .f-icons ul li {
+      list-style: none;
+      display: inline;
+      padding-right: 20px;
+      font-size: 24px;
+      padding-top: 30px;
+    }
+
+    .f-icons ul li a {
+      color: grey;
+      font-weight: lighter;
+      transition: all .5s;
+    }
+
+    .f-icons ul li a:hover {
+      color:darkgoldenrod;
+    }
+
+    @media screen and (max-width:768px) {
+      .f-icons input[type="email"] {
+        width: 160px;
+        font-size: 14px;
+        height: 30px;
+      }
+
+      .f-icons ul li {
+        font-size: 18px;
+        padding-right: 10px;
+      }
+
+      .links ul li {
+        font-size: 14px;
+        line-height: 26px;
+      }
+      .links h4, .f-icons h4 {
+        font-size: 20px;
+      }
+    }
+
+    @media screen and (max-width:576px) {
+      .col-4 {
+        width: 100%;
+      }
+
+      .mydiv-2 {
+        height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg navbar-light position-fixed" style="z-index:1;">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-3" href="index.html"><img src="images/PETBot logo.png" alt="logo" width="40px"
+          height="36px" style="margin-top: -10px; margin-left: 20px;"><span
+          style="color: black; font-family: cursive; font-weight:bold; font-style: italic; font-size: 28px;">PET</span><span
+          style="color: darkgoldenrod; font-family:cursive; font-weight: bold; font-style: italic; font-size: 28px;">Bot</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="categories.html" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Categories
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <ul>
+                <li><a class="dropdown-item" href>BOTTLES</a></li>
+                <li><a class="dropdown-item" href="categories.html">Water Bottles</a></li>
+                <li><a class="dropdown-item" href="juice.html">Juice Bottles</a></li>
+                <li><a class="dropdown-item" href="Hair-care.html">Hair Care Bottles</a></li>
+                <li><a class="dropdown-item" href="Pharma.html">Pharmacuetical Bottles</a></li>
+                <li><a class="dropdown-item" href="spray.html">Spray Bottles</a></li>
+                <li><a class="dropdown-item" href="Edible.html">Edible Oil Bottles</a></li>
+                <li><a class="dropdown-item" href="House.html">Household Chemical
+                    Bottles</a></li>
+              </ul>
+              <ul>
+                <li><a class="dropdown-item" href>JARS</a></li>
+                <li><a class="dropdown-item" href="spice.html">Spice Jars</a></li>
+                <li><a class="dropdown-item" href="candle.html">Candles Jar</a></li>
+                <li><a class="dropdown-item" href="makeup.html">Makeup Jars</a></li>
+                <li><a class="dropdown-item" href="cookies.html">Cookies Jars</a></li>
+                <li><a class="dropdown-item" href="sauce.html">Sauce Jars</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutUs.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="query.html">Queries</a>
+          </li>
+          <div class="nav-icons">
+            <ul>
+              <li class="nav-item1">
+                <a class="nav-link" href="log-in.html"><span><i class="fa-solid fa-user"></i></span>
+                  Login</a>
+              </li>
+            </ul>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Banner Start -->
+  <div class="container-fluid banner">
+    <div class="row d-flex justify-content-around align-items-center">
+      <div class="col-12 banner-des">
+        <h1>Welcome to PETBot</h1>
+        <p>PETBot is aleading manufacturer of PET
+          (polyethene terephthalate)
+          bottles, comitted to providing hight-quality, sustainable
+          packaging solutions. We have grown to become a trusted partner for
+          businesses across various industries, including beverages, food,
+          cosmetics, and pharmacueticals.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Categories -->
+  <div class="container categories">
+    <div class="row">
+      <div class="center">
+        <h2>TOP CATEGORIES</h2>
+      </div>
+      <hr>
+      <div class="featured-text">
+        <p>We utilize recycled PET materials to produce our bottles and jars.
+          We offer a diverse range of PET bottles and jars in various sizes
+          and designs.</p>
+        <a href="categories.html"><button class="btn1">EXPLORE</button></a>
+      </div>
+    </div>
+    <div class="row r1">
+      <div class="pic pic1">
+        <div class="title">
+          <a href="categories.html">
+            <h3>WATER BOTTLES</h3>
+          </a>
+        </div>
+      </div>
+      <div class="pic pic2">
+        <div class="title">
+          <a href="juice.html">
+            <h3>JUICE BOTTLES</h3>
+          </a>
+        </div>
+      </div>
+      <div class="pic pic3">
+        <div class="title">
+          <a href="Hair-care.html">
+            <h3>HAIR CARE BOTTLES</h3>
+          </a>
+        </div>
+      </div>
+      <div class="pic pic4">
+        <div class="title">
+          <a href="Pharma.html">
+            <h3>PHARMACUETICAL BOTTLES</h3>
+          </a>
+        </div>
+      </div>
+      <div class="pic pic5">
+        <div class="title">
+          <a href="spray.html">
+            <h3>SPRAY BOTTLES</h3>
+          </a>
+        </div>
+      </div>
+      <div class="pic pic6">
+        <div class="title">
+          <a href="Edible.html">
+            <h3>EDIBLE OIL BOTTLES</h3>
+          </a>
+        </div>
+      </div>
+      <div class="pic pic7">
+        <div class="title">
+          <a href="House.html">
+            <h3>HOUSEHOLD CHEMICAL BOTTLES</h3>
+          </a>
+        </div>
+      </div>
+      <div class="pic pic8">
+        <div class="title">
+          <a href="spice.html">
+            <h3>SPICE JARS</h3>
+          </a>
+        </div>
+      </div>
+      <div class="pic pic9">
+        <div class="title">
+          <a href="candle.html">
+            <h3>CANDLE JARS</h3>
+          </a>
+        </div>
+      </div>
+      <div class="pic pic10">
+        <div class="title">
+          <a href="makeup.html">
+            <h3>MAKE UP JARS</h3>
+          </a>
+        </div>
+      </div>
+      <div class="pic pic11">
+        <div class="title">
+          <a href="cookies.html">
+            <h3>COOKIES JARS</h3>
+          </a>
+        </div>
+      </div>
+      <div class="pic pic12">
+        <div class="title">
+          <a href="sauce.html">
+            <h3>SAUCE JARS</h3>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Block Container -->
+  <div class="main">
+    <div class="container block">
+      <div class="row d-flex align-items-center">
+        <div class="col-md-4 block-img">
+        </div>
+        <div class="col-md-8 block-content">
+          <h2>The PETBot webshop</h2>
+          <ul>
+            <li>
+              <span style="color: darkgoldenrod; font-size: 18px;"><i class="fa-solid fa-square-check"></i></span> Fast
+              delivery from stock
+            </li>
+            <li>
+              <span style="color: darkgoldenrod; font-size: 18px;"><i class="fa-solid fa-square-check"></i></span>
+              Extensive and versatile product range
+            </li>
+            <li>
+              <span style="color: darkgoldenrod; font-size: 18px;"><i class="fa-solid fa-square-check"></i></span> No
+              minimum order quantity
+            </li>
+            <li>
+              <span style="color: darkgoldenrod; font-size: 18px;"><i class="fa-solid fa-square-check"></i></span>
+              Various payment options
+            </li>
+            <li>
+              <span style="color: darkgoldenrod; font-size: 18px;"><i class="fa-solid fa-square-check"></i></span>
+              Excellent price / quality ratio
+            </li>
+            <li>
+              <span style="color: darkgoldenrod; font-size: 18px;"><i class="fa-solid fa-square-check"></i></span> Years
+              of experience in the industry
+            </li>
+            <li>
+              <span style="color: darkgoldenrod; font-size: 18px;"><i class="fa-solid fa-square-check"></i></span> Own
+              production and warehousing
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main2">
+    <div class="container block1">
+      <div class="row d-flex align-items-center">
+        <div class="col-md-8 block-content1">
+          <h2>Our Spray Bottles</h2>
+          <p>Spray PET bottles are an efficient, cost-effective, and sustainable packaging solution that provides
+            convenience and functionality across multiple industries. Their durability, lightweight nature, and
+            recyclability make them a preferred choice for products ranging from personal care and household cleaning to
+            automotive and gardening applications. With growing awareness around sustainability, many manufacturers are
+            turning to recycled PET or developing systems for refilling and reusing spray bottles, contributing to a
+            more eco-conscious approach to packaging.</p><br>
+          <a href="spray.html"><button class="more">View our spray bottles</button></a>
+        </div>
+        <div class="col-md-4 block-img1"></div>
+      </div>
+    </div>
+  </div>
+  <div class="main">
+    <div class="container block2">
+      <div class="row d-flex align-items-center">
+        <div class="col-md-4 block-img2"></div>
+        <div class="col-md-8 block-content2">
+          <h2>Our Juice Bottles</h2>
+          <p>Juice PET bottles are an excellent packaging choice for the beverage industry due to their combination of
+            durability, transparency, cost-effectiveness, and environmental benefits. PET’s ability to preserve juice
+            freshness, flavor, and nutritional value, along with its lightweight and shatterproof nature, makes it a
+            preferred choice for both manufacturers and consumers. As the demand for sustainable packaging increases,
+            the use of recycled PET (rPET) in juice bottles is helping to reduce environmental impact. With ongoing
+            innovations in packaging design and sustainability, PET bottles will continue to be a key player in the
+            juice industry for years to come.</p><br>
+          <a href="juice.html"><button class="more">View our juice bottles</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main2">
+    <div class="container block3">
+      <div class="row d-flex align-items-center">
+        <div class="col-md-8 block-content3">
+          <h2>Our Pharmaceutical Bottles</h2>
+          <p>Pharmaceutical PET bottles are widely used in the pharmaceutical and
+            healthcare industries to package medications, liquid health supplements, syrups, and other therapeutic
+            products. Their combination of strength, clarity, chemical resistance, and safety features make them ideal
+            for packaging everything from liquid medications and health supplements to topical products and solid
+            dosages. As the pharmaceutical industry continues to prioritize sustainability and safety, PET bottles
+            remain a popular choice for manufacturers looking to balance performance with environmental responsibility.
+          </p><br>
+          <a href="Pharma.html"><button class="more">View our pharmaceutical bottles</button></a>
+        </div>
+        <div class="col-md-4 block-img3"></div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer Start -->
+  <div class="mydiv-2">
+    <div class="container footer">
+      <div class="row">
+        <div class="col-4 head">
+          <h3><a href="index.html">PETBot</a></h3>
+          <p>Pet Bot is a company focused on transforming plastic bottles into innovative, sustainable products. They
+            specialize in recycling and repurposing PET plastic to reduce environmental impact and promote eco-friendly
+            solutions.</p>
+        </div>
+        <div class="col-4 links">
+          <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="log-in.html">Log in</a></li>
+          <li><a href="sign-up.html">Sign up</a></li>
+        </ul>
+        </div>
+        <div class="col-4 f-icons d-flex align-items-center" style="flex-direction: column;">
+          <h4>SUBSCRIBE TODAY!</h4>
+          <a href="sign-up.html"><button type="submit" class="btn btn-subs subs1">
+            SIGN UP</button></a>
+          <ul>
+            <li><a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa-regular fa-envelope"></i></a></li>
+            <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest-p"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
