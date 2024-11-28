@@ -240,28 +240,28 @@ font-weight: bold;
 }
 .block-img{
   height: 300px;
-  background-image: url(/images/webshop.jpg);
+  background-image: url(../images/webshop.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 40px;
 }
 .block-img1{
   height: 300px;
-  background-image: url(/images/spray-pet-bottle.jpg);
+  background-image: url(../images/spray-pet-bottle.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 40px;
 }
 .block-img2{
   height: 300px;
-  background-image: url(/images/mni\ juice\ bottles.jpg);
+  background-image: url(../images/mni\ juice\ bottles.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 40px;
 }
 .block-img3{
   height: 300px;
-  background-image: url(/images/pharma\ bottles.jpg);
+  background-image: url(../images/pharma\ bottles.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 40px;
